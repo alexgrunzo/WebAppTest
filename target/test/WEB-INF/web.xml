@@ -1,0 +1,50 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>helloServlet</servlet-name>  <!-- any name -->
+    <servlet-class>ro.sci.servlet.HelloWorldServlet</servlet-class>
+  
+  </servlet>
+  <servlet>
+    <servlet-name>assignRole</servlet-name>  <!-- any name -->
+    <servlet-class>ro.sci.servlet.AssignRoleServlet</servlet-class>
+
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>usersServlet</servlet-name>
+    <servlet-class>ro.sci.servlet.UsersServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>myAgeServlet</servlet-name>
+    <servlet-class>ro.sci.servlet.MyAgeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name> <!-- the same name as in the definition-->
+    <url-pattern>/say-hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  <servlet-name>usersServlet</servlet-name>
+  <url-pattern>/users</url-pattern>
+</servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>myAgeServlet</servlet-name>
+    <url-pattern>/myAge</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>assignRole</servlet-name>
+    <url-pattern>/assignRole</url-pattern>
+  </servlet-mapping>
+
+</web-app>
