@@ -52,5 +52,5 @@ public class AssignRoleServlet  extends HttpServlet {
 
         }
 
-    }
+}
 
